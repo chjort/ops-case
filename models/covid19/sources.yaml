@@ -1,10 +1,10 @@
 sources:
-    - name: landing_covid19
+    - name: source_covid19
       description: COVID-19 Epidemiological Data from Snowflake Marketplace
       database: SOURCE_COVID19_DATA
       schema: PUBLIC
       tables:
-          - name: ECDC_GLOBAL
-            description: One record per customer.
-          - name: GOOG_GLOBAL_MOBILITY_REPORT
-            description: One record per order. Includes cancelled and deleted orders.
+          - name: ecdc_global
+            description: One record per customer.  # TODO
+          - name: goog_global_mobility_report
+            description: One record per order. Includes cancelled and deleted orders.  # TODO
