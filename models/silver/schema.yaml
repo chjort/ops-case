@@ -1,5 +1,30 @@
 version: 2
 
 models:
+
+  - name: countries
+    description: Country demographics.
+    columns:
+      - name: country_code
+        data_tests:
+          - unique
+          - not_null
+
+      - name: country_region
+        data_tests:
+          - unique
+          - not_null
+
+  - name: cases
+    description: Number of cases and deaths per day per country.
+    columns:
+      - name: country_code
+        data_tests:
+          - not_null
+
+      - name: country_region
+        data_tests:
+          - not_null
+  
   - name: case_statistics
     description: Cases and deaths statistics per day per country

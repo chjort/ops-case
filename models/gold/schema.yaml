@@ -1,5 +1,5 @@
 version: 2
 
 models:
-  - name: country_cases
+  - name: total_country_cases
     description: Cases and deaths per country

@@ -1,5 +1,24 @@
 version: 2
 
 models:
+  - name: stg_countries
+    description: Country demographics.
+    columns:
+      - name: country_code
+        data_tests:
+          - not_null
+#          - accepted_values:
+#              arguments:
+#                values: # TODO: Insert long list of allowed country codes
+
+      - name: country_region
+        data_tests:
+          - not_null
+
   - name: stg_cases
-    description: Number of cases and deaths per day per country
+    description: Number of cases and deaths per day per country.
+    columns:
+      - name: country_region
+        data_tests:
+          - not_null
+  
