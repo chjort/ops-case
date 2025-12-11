@@ -37,10 +37,15 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   covid19:
-    +materialized: table
     +persist_docs:
       relation: true
       columns: true
     bronze:
-      +materialized: view
+      +materialized: table
       +schema: bronze
+    silver:
+      +materialized: view
+      +schema: silver
+    gold:
+      +materialized: table
+      +schema: gold

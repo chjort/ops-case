@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_cases
+    description: Number of cases and deaths per day per country

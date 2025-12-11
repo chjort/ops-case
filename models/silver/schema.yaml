@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: case_statistics
+    description: Cases and deaths statistics per day per country
