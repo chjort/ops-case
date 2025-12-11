@@ -1,7 +1,8 @@
-select 
+{{ config(materialized='ephemeral') }}
+
+select
     country_region,
     sum(cases) as cases,
     sum(deaths) as deaths,
-    sum(deaths) / sum(cases) as fatality_rate
-from {{ ref('case_statistics') }}
+from {{ ref('cases') }}
 group by country_region
