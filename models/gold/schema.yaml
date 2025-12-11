@@ -6,10 +6,13 @@ models:
     columns:
       - name: country_region
         description: Name of country
+
       - name: cases
         description: Total number of COVID19 cases in country throughout history.
+
       - name: deaths
         description: Total number of COVID19 related deaths in country throughout history.
+
 
   - name: country_case_statistics
     description: COVID19 statistics per country
@@ -21,11 +24,18 @@ models:
 #              arguments:
 #                to: ref('countries')
 #                field: country_region
+  
+      - name: total_population
+        description: Total population of country.
+  
       - name: cases
         description: Total number of COVID19 cases in country throughout history.
+  
       - name: deaths
         description: Total number of COVID19 related deaths in country throughout history.
+  
       - name: fatality_rate
         description: Percentage of cases leading to death.
+  
       - name: cases_per_capita
         description: Percentage of population that was infected with COVID19.
