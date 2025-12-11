@@ -12,6 +12,7 @@ models:
 #                values: # TODO: Insert long list of allowed country codes
 
       - name: country_region
+        description: Name of country
         data_tests:
           - not_null
 

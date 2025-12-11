@@ -6,11 +6,13 @@ models:
     description: Country demographics.
     columns:
       - name: country_code
+        description: ISO3166_1 codename for country
         data_tests:
           - unique
           - not_null
 
       - name: country_region
+        description: Name of country
         data_tests:
           - unique
           - not_null
@@ -19,10 +21,12 @@ models:
     description: Number of cases and deaths per day per country.
     columns:
       - name: country_code
+        description: ISO3166_1 codename for country
         data_tests:
           - not_null
 
       - name: country_region
+        description: Name of country
         data_tests:
           - not_null
   
